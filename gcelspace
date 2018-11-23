@@ -1,0 +1,8 @@
+# List total size of folders in cur directory, sorted by size, biggest first
+du -sch * | sort -hr
+
+# Show the gcel space usage
+df -h | grep 'Avail\|gcel'
+
+# Show the mornings quota
+cat ${GCEL_DATA}/quota.txt
